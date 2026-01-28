@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Astra Voyages Landing Page</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#22D3EE", // Electric Cyan
+                        "background-dark": "#020617", // Deep Navy
+                        "glass": "rgba(255, 255, 255, 0.05)",
+                        "glass-border": "rgba(255, 255, 255, 0.1)",
+                        "glass-hover": "rgba(34, 211, 238, 0.1)",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "sans": ["Inter", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'hero-gradient': 'radial-gradient(circle at center, rgba(34, 211, 238, 0.15) 0%, rgba(2, 6, 23, 0) 70%)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.3);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-white font-display overflow-x-hidden selection:bg-primary selection:text-background-dark">
+<!-- Navbar -->
+<header class="fixed top-0 left-0 right-0 z-50 px-4 py-4 lg:px-10">
+<div class="glass-panel mx-auto max-w-7xl rounded-full px-6 py-3 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined !text-[28px]">rocket_launch</span>
+</div>
+<h1 class="text-lg font-bold tracking-tight text-white hidden sm:block">Astra Voyages</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-slate-300 hover:text-primary transition-colors" href="#">Destinations</a>
+<a class="text-sm font-medium text-slate-300 hover:text-primary transition-colors" href="#">Fleet</a>
+<a class="text-sm font-medium text-slate-300 hover:text-primary transition-colors" href="#">Experience</a>
+</nav>
+<button class="bg-primary/10 hover:bg-primary hover:text-background-dark text-primary border border-primary/30 hover:border-primary transition-all duration-300 rounded-full px-5 py-2 text-sm font-bold flex items-center gap-2 group">
+<span>Book Now</span>
+<span class="material-symbols-outlined !text-[18px] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="relative pt-24 pb-20">
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center justify-center px-4 lg:px-10 overflow-hidden">
+<!-- Background Elements -->
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&amp;w=2072&amp;auto=format&amp;fit=crop')] bg-cover bg-center opacity-20 pointer-events-none" data-alt="Dark deep space nebula background with stars"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-background-dark/80 via-background-dark/90 to-background-dark pointer-events-none"></div>
+<div class="absolute inset-0 bg-hero-gradient pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center gap-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-medium tracking-wide uppercase mb-2 animate-pulse">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    Now booking for 2154 Season
+                </div>
+<h2 class="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-400 text-glow">
+                    THE GALAXY<br/>IS WAITING
+                </h2>
+<p class="text-slate-400 text-lg md:text-xl font-light max-w-xl leading-relaxed">
+                    Luxury warp-speed travel for the modern explorer. Experience the cosmos in uncompromised comfort.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto">
+<button class="bg-primary text-background-dark hover:bg-cyan-300 transition-colors h-12 px-8 rounded-lg font-bold text-base flex items-center justify-center gap-2 min-w-[200px]">
+                        Explore Destinations
+                    </button>
+<button class="glass-panel text-white hover:bg-white/10 transition-colors h-12 px-8 rounded-lg font-medium text-base flex items-center justify-center gap-2 min-w-[200px]">
+<span class="material-symbols-outlined !text-[20px]">play_circle</span>
+                        View The Fleet
+                    </button>
+</div>
+</div>
+</section>
+<!-- Stats Strip -->
+<div class="w-full border-y border-white/5 bg-background-dark/50 backdrop-blur-sm py-6 mb-24 relative z-20">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center md:text-left">
+<p class="text-3xl font-bold text-white mb-1">12</p>
+<p class="text-xs uppercase tracking-widest text-slate-500">Planets</p>
+</div>
+<div class="text-center md:text-left">
+<p class="text-3xl font-bold text-white mb-1">4.2c</p>
+<p class="text-xs uppercase tracking-widest text-slate-500">Max Speed</p>
+</div>
+<div class="text-center md:text-left">
+<p class="text-3xl font-bold text-white mb-1">0%</p>
+<p class="text-xs uppercase tracking-widest text-slate-500">Accident Rate</p>
+</div>
+<div class="text-center md:text-left">
+<p class="text-3xl font-bold text-white mb-1">5k+</p>
+<p class="text-xs uppercase tracking-widest text-slate-500">Voyagers</p>
+</div>
+</div>
+</div>
+<!-- Destinations Section -->
+<section class="max-w-7xl mx-auto px-4 lg:px-10 mb-32">
+<div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+<div>
+<h3 class="text-primary font-bold text-sm tracking-widest uppercase mb-2">Curated Journeys</h3>
+<h2 class="text-3xl md:text-4xl font-bold text-white">Select Destination</h2>
+</div>
+<a class="text-slate-400 hover:text-white flex items-center gap-1 text-sm group transition-colors" href="#">
+                    View all 12 locations 
+                    <span class="material-symbols-outlined !text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[400px]">
+<!-- Mars Card (Large) -->
+<div class="md:col-span-2 group relative rounded-xl overflow-hidden border border-white/10 hover:border-primary/50 transition-colors duration-500">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1614728853975-a0830431b42c?q=80&amp;w=1974&amp;auto=format&amp;fit=crop')] bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Red planet Mars landscape with dusty atmosphere"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="glass-panel inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium text-primary mb-3">
+<span class="material-symbols-outlined !text-[14px]">thermostat</span> -63°C Average
+                        </div>
+<h3 class="text-3xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Mars Colony Alpha</h3>
+<p class="text-slate-300 text-sm max-w-md line-clamp-2 mb-4">Experience the rustic beauty of the red planet. Visit Olympus Mons and stay in our transparent geo-domes.</p>
+<div class="flex items-center justify-between border-t border-white/10 pt-4 mt-4">
+<span class="text-white font-bold">From ₿0.45</span>
+<span class="material-symbols-outlined text-white group-hover:text-primary transition-colors">arrow_outward</span>
+</div>
+</div>
+</div>
+<!-- Europa Card -->
+<div class="md:col-span-1 group relative rounded-xl overflow-hidden border border-white/10 hover:border-primary/50 transition-colors duration-500">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1614726365723-49cfae9f0f94?q=80&amp;w=1974&amp;auto=format&amp;fit=crop')] bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Icy surface of Europa moon with cracks"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<h3 class="text-2xl font-bold text-white mb-1 group-hover:text-primary transition-colors">Europa</h3>
+<p class="text-slate-300 text-xs mb-4">Sub-surface ocean resorts.</p>
+<div class="flex items-center justify-between">
+<span class="text-white text-sm font-bold">From ₿0.82</span>
+<span class="material-symbols-outlined text-white text-sm group-hover:text-primary transition-colors">arrow_outward</span>
+</div>
+</div>
+</div>
+<!-- Titan Card -->
+<div class="md:col-span-1 group relative rounded-xl overflow-hidden border border-white/10 hover:border-primary/50 transition-colors duration-500">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541873676-a18131494184?q=80&amp;w=2036&amp;auto=format&amp;fit=crop')] bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Dark moody atmosphere of Saturn's moon Titan"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<h3 class="text-2xl font-bold text-white mb-1 group-hover:text-primary transition-colors">Titan</h3>
+<p class="text-slate-300 text-xs mb-4">Methane lakes exploration.</p>
+<div class="flex items-center justify-between">
+<span class="text-white text-sm font-bold">From ₿1.20</span>
+<span class="material-symbols-outlined text-white text-sm group-hover:text-primary transition-colors">arrow_outward</span>
+</div>
+</div>
+</div>
+<!-- Kepler Card -->
+<div class="md:col-span-2 group relative rounded-xl overflow-hidden border border-white/10 hover:border-primary/50 transition-colors duration-500">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&amp;w=2022&amp;auto=format&amp;fit=crop')] bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Distant galaxy view representing deep space travel"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="glass-panel inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium text-primary mb-3">
+<span class="material-symbols-outlined !text-[14px]">wb_twilight</span> New Arrival
+                        </div>
+<h3 class="text-3xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Kepler-186f</h3>
+<p class="text-slate-300 text-sm max-w-md line-clamp-2 mb-4">The Earth's cousin. Lush forests and red vegetation await in this habitable zone paradise.</p>
+<div class="flex items-center justify-between border-t border-white/10 pt-4 mt-4">
+<span class="text-white font-bold">From ₿5.50</span>
+<span class="material-symbols-outlined text-white group-hover:text-primary transition-colors">arrow_outward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="max-w-7xl mx-auto px-4 lg:px-10 mb-20">
+<div class="text-center mb-16 max-w-3xl mx-auto">
+<h3 class="text-primary font-bold text-sm tracking-widest uppercase mb-3">The Astra Standard</h3>
+<h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Redefining Interstellar Travel</h2>
+<p class="text-slate-400 text-lg">We don't just transport you to the stars; we ensure the journey is as memorable as the destination.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Feature 1 -->
+<div class="glass-panel p-8 rounded-xl border border-white/5 hover:border-primary/30 transition-all duration-300 group">
+<div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined !text-[32px]">shield_lock</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-3">Uncompromised Safety</h3>
+<p class="text-slate-400 leading-relaxed text-sm">
+                        Our fleet utilizes Class-X shielding and AI-driven navigation to ensure absolute protection against cosmic radiation and debris.
+                    </p>
+</div>
+<!-- Feature 2 -->
+<div class="glass-panel p-8 rounded-xl border border-white/5 hover:border-primary/30 transition-all duration-300 group">
+<div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined !text-[32px]">bolt</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-3">Warp Speed</h3>
+<p class="text-slate-400 leading-relaxed text-sm">
+                        Powered by antimatter propulsion, reach the outer rim in days, not decades. Time dilation correction included.
+                    </p>
+</div>
+<!-- Feature 3 -->
+<div class="glass-panel p-8 rounded-xl border border-white/5 hover:border-primary/30 transition-all duration-300 group">
+<div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined !text-[32px]">diamond</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-3">Absolute Luxury</h3>
+<p class="text-slate-400 leading-relaxed text-sm">
+                        Zero-gravity suites, molecular gastronomy, and panoramic viewing decks standard on every flight class.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="max-w-4xl mx-auto px-4 lg:px-10 mb-20">
+<div class="glass-panel rounded-2xl p-8 md:p-12 text-center relative overflow-hidden">
+<!-- Decorative glow -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[400px] h-[200px] bg-primary/20 blur-[100px] pointer-events-none"></div>
+<div class="relative z-10">
+<h2 class="text-3xl font-bold text-white mb-4">Join the Waitlist</h2>
+<p class="text-slate-400 mb-8 max-w-lg mx-auto">Be the first to know about new routes to the Andromeda galaxy and exclusive early-bird offers.</p>
+<form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+<input class="flex-1 bg-background-dark/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-primary/50 transition-colors" placeholder="Enter your email address" type="email"/>
+<button class="bg-primary hover:bg-cyan-300 text-background-dark font-bold px-6 py-3 rounded-lg transition-colors whitespace-nowrap" type="button">
+                            Sign Up
+                        </button>
+</form>
+<p class="text-slate-600 text-xs mt-4">No spam, just stardust. Unsubscribe at any time.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-white/5 bg-background-dark py-12">
+<div class="max-w-7xl mx-auto px-4 lg:px-10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<div class="text-primary">
+<span class="material-symbols-outlined !text-[24px]">rocket_launch</span>
+</div>
+<span class="text-white font-bold text-lg">Astra Voyages</span>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-white text-sm transition-colors" href="#">Terms</a>
+<a class="text-slate-500 hover:text-white text-sm transition-colors" href="#">Privacy</a>
+<a class="text-slate-500 hover:text-white text-sm transition-colors" href="#">Cookies</a>
+</div>
+<div class="text-slate-600 text-sm">
+                    © 2154 Astra Voyages Inc.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>
